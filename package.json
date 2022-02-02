@@ -1,0 +1,26 @@
+{
+  "name": "social-share",
+  "version": "1.0.0",
+  "description": "social share widget",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhanugupta/social-share-js.git"
+  },
+  "keywords": [
+    "social",
+    "share"
+  ],
+  "author": "Dhanu Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhanugupta/social-share-js/issues"
+  },
+  "homepage": "https://github.com/dhanugupta/social-share-js#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
