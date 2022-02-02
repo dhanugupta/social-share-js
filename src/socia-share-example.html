@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <title>Social Share Widget Example</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/social-share-widget.css">
+   </link>
+   <script type='text/javascript' src="js/social-share-widget.js"></script>
+   </head>
+   <body>
+      <h1>Social Sharing<span>(Vanilla JavaScript)</span></h1>
+      <div class="links">
+         <a href="javascript:void(0);" class="fa fa-facebook" data-url="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" data-desc="sharing description gos here"></a>
+         <a href="javascript:void(0);" class="fa fa-twitter" data-url="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" data-desc="sharing description gos here"></a>
+         <a href="javascript:void(0);" class="fa fa-envelope" data-url="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" data-desc="sharing description gos here"></a>
+      </div>
+      <div class="notes">
+         <p>
+            Any page if needs to show image, icon needs to update with meta tags:
+         <ul>
+            Bare minmum meta tags needed for social sharing
+         </ul>
+         <p>
+         <pre rel="HTML" class="wp-block-csstricks-code-block  language-html" data-line=""><code markup="tt" class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>European Travel Destinations<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>article<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Offering tour packages for individuals or groups.<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:image<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://euro-travel-example.com/thumbnail.jpg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:url<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://euro-travel-example.com/index.htm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:card<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>summary_large_image<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+         </p>
+      </div>
+   </body>
+</html>
+<script>
+   window.onload = setShareLinks;
+</script>
