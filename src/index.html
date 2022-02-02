@@ -3,17 +3,24 @@
    <title>Social Share Widget Example</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="css/social-share-widget.css">
-   </link>
+   <link rel="stylesheet" href="css/social-share-widget.css"></link>
    <script type='text/javascript' src="js/social-share-widget.js"></script>
    </head>
    <body>
       <h1>Social Sharing<span>(Vanilla JavaScript)</span></h1>
-      <div class="links">
-         <a href="javascript:void(0);" class="fa fa-facebook" data-url="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" data-desc="sharing description gos here"></a>
-         <a href="javascript:void(0);" class="fa fa-twitter" data-url="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" data-desc="sharing description gos here"></a>
-         <a href="javascript:void(0);" class="fa fa-envelope" data-url="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" data-desc="sharing description gos here"></a>
-      </div>
+      <div class="container">
+    <div class="card"> <span class="head">Social Sharing</span>
+        <div class="content">
+            <h3>Link to share</h3>
+            <div class="input-text"> <i class="fa fa-lock"></i> <input type="text" id="social_input" value="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" readonly> <i class="fa fa-copy"></i> </div>
+            <ul class="social">
+                <li><a href="javascript:void(0);" class="a-facebook" data-url="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" data-desc="sharing description gos here"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="javascript:void(0);" class="a-twitter" data-url="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" data-desc="sharing description gos here"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="javascript:void(0);" class="a-envelope" data-url="https://css-tricks.com/evergreen-does-not-mean-immediately-available/" data-desc="sharing description gos here"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
       <div class="notes">
          <p>
             Any page if needs to show image, icon needs to update with meta tags:

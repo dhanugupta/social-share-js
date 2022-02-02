@@ -3,7 +3,7 @@ function setShareLinks() {
    var pageUrl = encodeURIComponent(document.URL);
    var description = "default Text";
 
-    elements = document.querySelectorAll(".fa.fa-facebook");
+    elements = document.querySelectorAll(".a-facebook");
     Array.prototype.forEach.call(elements, function(el) {
         var pageUrl = encodeURIComponent(el.getAttribute('data-url'));
         var desc = "";
@@ -16,7 +16,7 @@ function setShareLinks() {
         });
     });
 
-    elements = document.querySelectorAll(".fa.fa-twitter");
+    elements = document.querySelectorAll(".a-twitter");
     Array.prototype.forEach.call(elements, function(el) {
             var pageUrl = encodeURIComponent(el.getAttribute('data-url'));
         var desc = "";
@@ -29,7 +29,7 @@ function setShareLinks() {
         });
     });
 
-      elements = document.querySelectorAll(".fa.fa-envelope");
+      elements = document.querySelectorAll(".a-envelope");
     Array.prototype.forEach.call(elements, function(el) {
         var pageUrl = encodeURIComponent(el.getAttribute('data-url'));
         var desc = "";
@@ -43,6 +43,13 @@ function setShareLinks() {
             window.location.href = url;
         });
     });
+
+     var copy = document.querySelector(".input-text .fa-copy");
+   copy.addEventListener('click',function(){ social_input.select(); document.execCommand('copy'); });
+
+   var a = document.querySelectorAll(".social li a");
+var copy = document.querySelector(".input-text .fa-copy");
+var social_input = document.getElementById('social_input')
 };
 
 function socialWindow(url) {
