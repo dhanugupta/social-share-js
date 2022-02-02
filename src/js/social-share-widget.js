@@ -29,14 +29,14 @@ function setShareLinks() {
         });
     });
 
-      elements = document.querySelectorAll(".fa.fa-email");
+      elements = document.querySelectorAll(".fa.fa-envelope");
     Array.prototype.forEach.call(elements, function(el) {
         var pageUrl = encodeURIComponent(el.getAttribute('data-url'));
         var desc = "";
         if(el.getAttribute('data-desc')) {
             desc = encodeURIComponent(el.getAttribute('data-desc') + "\n\n\n"+ pageUrl);
         }
-        var email_address = "test@gmail.com";
+        var email_address = "";
         var title ="sharing title";
         el.addEventListener("click", function() {
             url ="mailto:" + email_address + "?subject=" + title + "&body=" + desc
